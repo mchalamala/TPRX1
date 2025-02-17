@@ -15,7 +15,7 @@ The analysis pipeline includes:
 ## Repository Structure
 ```
 TPRX1/
-│── deseq2/              # Differential expression analysis (Zou et al.)
+│── deseq2/              # Differential expression analysis 
 │── filtering/           # Filtering significant differentially expressed genes
 │── heatmap/             # Heatmap visualization of totipotency markers
 │── scoring_algorithm.py # Totipotency scoring algorithm
@@ -28,14 +28,14 @@ TPRX1/
 The following datasets were analyzed to identify totipotency markers and evaluate totipotent-like transcriptional signatures:
 
 ### **RNA-seq, Ribo-seq, and STACC-seq Data**
-- Zou et al. (Publicly available RNA-seq, Ribo-seq, and STACC-seq datasets)
+- Translatome and transcriptome co-profiling reveals a role of TPRXs in human zygotic genome activation (Zou et al.)
 
 ### **8CLC Datasets for Totipotency Scoring**
-- Taubenschmid-Stowers et al., 2022
-- Yu et al., 2022
-- Moya-Jódar et al., 2023
-- Yoshihara et al., 2022
-- Yan et al., 2013
+- 8C-like cells capture the human zygotic genome activation program in vitro (Taubenschmid-Stowers et al., 2022)
+- Recapitulating early human development with 8C-like cells (Yu et al., 2022)
+- Revealing cell populations catching the early stages of human embryo development in naive pluripotent stem cell cultures (Moya-Jódar et al., 2023)
+- Transient DUX4 expression in human embryonic stem cells induces blastomere-like expression program that is marked by SLC34A2 (Yoshihara et al., 2022)
+- Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells (Yan et al., 2013)
 
 ---
 
@@ -47,7 +47,7 @@ The following datasets were analyzed to identify totipotency markers and evaluat
 
 ### **2. Gene Filtering (`filtering`)**
 - Filters significantly upregulated and downregulated genes based on:
-  - `padj < 0.06`
+  - `padj < 0.05`
   - `log2FoldChange > 2` (upregulated) or `< -2` (downregulated)
 - Outputs: `filtered_genes.xlsx`
 
@@ -116,4 +116,8 @@ pip install pandas openpyxl matplotlib seaborn
 ---
 
 ## **Citations**
-I do this later
+[1] rargelaguet, “GitHub - rargelaguet/DUX4_8CLC_hESCs: DUX4_ hESCs_multiome,” GitHub, 2021. https://github.com/rargelaguet/DUX4_8CLC_hESCs (accessed Feb. 17, 2025).
+‌[2] ChenManqi2, “GitHub - ChenManqi2/ci8CLC_scripts,” GitHub, 2022. https://github.com/ChenManqi2/ci8CLC_scripts (accessed Feb. 17, 2025).
+‌[3] my0916, “GitHub - my0916/STRT2: STRT2-NextSeq analysis pipeline,” GitHub, 2019. https://github.com/my0916/STRT2 (accessed Feb. 17, 2025).
+‌[4] Z. Zou et al., “Translatome and transcriptome co-profiling reveals a role of TPRXs in human zygotic genome activation,” Science (New York, N.Y.), vol. 378, no. 6615, p. abo7923, Oct. 2022, doi: https://doi.org/10.1126/science.abo7923.
+[5] L. Delisle, M. Doyle, and F. Heyl, “Hands-on: Hands-on: ATAC-Seq data analysis,” Galaxy Training Network, Nov. 03, 2023. https://training.galaxyproject.org/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html
