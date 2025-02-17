@@ -117,7 +117,11 @@ pip install pandas openpyxl matplotlib seaborn
 
 ## **Citations**
 [1] rargelaguet, “GitHub - rargelaguet/DUX4_8CLC_hESCs: DUX4_ hESCs_multiome,” GitHub, 2021. https://github.com/rargelaguet/DUX4_8CLC_hESCs (accessed Feb. 17, 2025).
-‌[2] ChenManqi2, “GitHub - ChenManqi2/ci8CLC_scripts,” GitHub, 2022. https://github.com/ChenManqi2/ci8CLC_scripts (accessed Feb. 17, 2025).
+‌
+[2] ChenManqi2, “GitHub - ChenManqi2/ci8CLC_scripts,” GitHub, 2022. https://github.com/ChenManqi2/ci8CLC_scripts (accessed Feb. 17, 2025).
+
 ‌[3] my0916, “GitHub - my0916/STRT2: STRT2-NextSeq analysis pipeline,” GitHub, 2019. https://github.com/my0916/STRT2 (accessed Feb. 17, 2025).
+
 ‌[4] Z. Zou et al., “Translatome and transcriptome co-profiling reveals a role of TPRXs in human zygotic genome activation,” Science (New York, N.Y.), vol. 378, no. 6615, p. abo7923, Oct. 2022, doi: https://doi.org/10.1126/science.abo7923.
+
 [5] L. Delisle, M. Doyle, and F. Heyl, “Hands-on: Hands-on: ATAC-Seq data analysis,” Galaxy Training Network, Nov. 03, 2023. https://training.galaxyproject.org/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html
