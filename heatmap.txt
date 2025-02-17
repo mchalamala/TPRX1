@@ -1,0 +1,33 @@
+Analysis was done using Galaxy.
+
+### **STACC-Seq Data Analysis**
+
+This repository contains scripts and workflows for STACC-Seq data analysis, focusing on chromatin accessibility and gene regulation. The analysis aims to identify open chromatin regions, transcription start site (TSS) accessibility, and potential regulatory elements such as enhancers and silencers.
+
+### **Key Features**
+- Preprocessing: Quality control, adapter trimming, and filtering mapped reads
+- Mapping:Aligning ATAC-Seq reads to the reference genome using Bowtie2
+- Peak Calling: Identifying accessible chromatin regions with MACS2
+- Visualization:
+  - Heatmaps of TSS accessibility using deepTools
+  - Peak signal tracks in bigWig format for genome browser visualization
+  - Volcano plots and differential chromatin accessibility analysis
+
+### **Analysis Pipeline**
+1. Quality Control & Preprocessing
+2. Mapping to Reference Genome (hg18)
+3. Peak Calling with MACS2
+4. Filtering Duplicate Reads
+5. Visualization (Heatmaps, Coverage Plots, Volcano Plots)
+
+### **Outputs**
+- **`heatmap.png`** – TSS accessibility heatmap.
+- **`bigwig`** – Genome-wide coverage tracks for browser visualization.
+
+### **How to Run**
+1. Run preprocessing and mapping steps.
+2. Perform peak calling and visualization.
+
+Citation:
+[1] L. Delisle, M. Doyle, and F. Heyl, “Hands-on: Hands-on: ATAC-Seq data analysis,” Galaxy Training Network, Nov. 03, 2023. https://training.galaxyproject.org/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html
+[2] Z. Zou et al., “Translatome and transcriptome co-profiling reveals a role of TPRXs in human zygotic genome activation,” Science (New York, N.Y.), vol. 378, no. 6615, p. abo7923, Oct. 2022, doi: https://doi.org/10.1126/science.abo7923.
